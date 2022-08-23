@@ -32,7 +32,7 @@ export function Home() {
     const dataKey = "@savepass:logins";
     // Get asyncStorage data, use setSearchListData and setData
     const response = await AsyncStorage.getItem(dataKey);
-    const storageData = response ? JSON.parse(response!) : [];
+    const storageData = response ? JSON.parse(response) : [];
 
     setData(storageData);
     setSearchListData(storageData);
