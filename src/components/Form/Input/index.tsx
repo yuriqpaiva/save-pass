@@ -13,10 +13,10 @@ import {
 } from './styles';
 
 interface Props extends TextInputProps {
-  control: Control;
+  control: Control<any>;
   name: string;
   title: string;
-  error: string;
+  error: string | undefined;
 }
 
 export function Input({

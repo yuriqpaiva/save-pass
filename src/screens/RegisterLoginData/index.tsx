@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
 import { Alert, KeyboardAvoidingView, Platform } from "react-native";
-import { useForm } from "react-hook-form";
+import { SubmitHandler, useForm } from "react-hook-form";
 import { RFValue } from "react-native-responsive-fontsize";
 import * as Yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -45,11 +45,11 @@ export function RegisterLoginData() {
     control,
     handleSubmit,
     formState: { errors },
-  } = useForm({
+  } = useForm<FormData>({
     resolver: yupResolver(schema),
   });
 
-  async function handleRegister(formData: FormData) {
+  const handleRegister: SubmitHandler<FormData> = async (formData) => {
     const newLoginData = {
       id: String(uuid.v4()),
       ...formData,
@@ -65,7 +65,7 @@ export function RegisterLoginData() {
       JSON.stringify([...storageData, newLoginData])
     );
     navigate("Home");
-  }
+  };
 
   return (
     <KeyboardAvoidingView
