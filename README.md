@@ -3,8 +3,8 @@
 <br/>
 
 <div align="center">
-<img align="center" src="https://i.ibb.co/yWpCYxt/Simulator-Screen-Shot-i-Phone-13-2022-08-23-at-15-14-32.png" with="300px" height="300px" />
-<img align="center" src="https://i.ibb.co/yh1zWys/Simulator-Screen-Shot-i-Phone-13-2022-08-23-at-15-14-47.png" with="300px" height="300px" />
+<img align="center" src="https://i.ibb.co/yWpCYxt/Simulator-Screen-Shot-i-Phone-13-2022-08-23-at-15-14-32.png" with="300px" height="350px" />
+<img align="center" src="https://i.ibb.co/yh1zWys/Simulator-Screen-Shot-i-Phone-13-2022-08-23-at-15-14-47.png" with="300px" height="350px" />
 </div>
 
 ## 💡 Introduction
